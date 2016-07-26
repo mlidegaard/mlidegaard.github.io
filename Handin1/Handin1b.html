@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button name="fbLogin" onClick="fbLogin()" >Facebook Login</button>
+
+
+<script>
+
+    function fbLogin(){
+        console.log("Facebook Login pressed");
+
+        window.location.replace("https://www.facebook.com/dialog/oauth?" +
+                "client_id=1289842797700537" +
+                "&redirect_uri=http://localhost:63342/PrivacyAndIdentity/Handin1/Sites/SuccessfulLogin.html" +
+                "$response_type=granted_scopes" +
+                "&scope=public_profile,email"
+                )
+
+
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>
